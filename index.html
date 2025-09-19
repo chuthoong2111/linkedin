@@ -6,7 +6,7 @@
   <title>Terra Indochina DMC</title>
   
   <!-- Tailwind v4 -->
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="./output.css" rel="stylesheet">
 
   <!-- SwiperJS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -35,107 +35,107 @@
     opacity: 1;
     pointer-events: auto;
     display: flex;
-    overflow: auto;
-    padding-top: 200px;
+    overflow: auto;    
   }
   </style>
 </head>
-<body class="font-sans text-gray-700 lg:text-lg pt-[100px]">
+<body class="pt-[100px] font-sans text-gray-700 lg:text-lg">
 
   <!-- HEADER -->
-  <header class="  px-4 py-3 top-0 left-0 z-50 w-full bg-white transition fixed"  id="site-header">
-    <div class="flex items-center justify-between max-w-6xl mx-auto  space-x-2">   
+  <header class="top-0 left-0 z-50 fixed bg-white px-4 py-3 w-full transition"  id="site-header">
+    <div class="flex justify-between items-center space-x-2 mx-auto max-w-6xl">   
       <img src="images/logo.png" alt="Logo" class="h-14 lg:h-20">
-    <h1 class="text-gray-500 text-2xl hidden lg:block">Siamo un DMC B2B con sede in Vietnam da 24 anni</h1>
+    <h1 class="hidden lg:block text-gray-500 text-2xl">Siamo un DMC B2B con sede in Vietnam da 24 anni</h1>
    <!-- Hamburger -->
-  <button id="menu-btn" class="relative w-8 h-4 flex flex-col justify-between cursor-pointer">
-    <span class="block w-full h-0.5 bg-[#F7941D] transition"></span>
-    <span class="block w-full h-0.5 bg-[#F7941D] transition"></span>
-    <span class="block w-full h-0.5 bg-[#F7941D] transition"></span>
+  <button type="button" id="menu-btn" class="relative flex flex-col justify-between w-8 h-4 cursor-pointer">
+    <span class="block bg-[#F7941D] w-full h-0.5 transition"></span>
+    <span class="block bg-[#F7941D] w-full h-0.5 transition"></span>
+    <span class="block bg-[#F7941D] w-full h-0.5 transition"></span>
+    <span class="hidden">Menu</span>
   </button>
     </div>
   </header>
 <!-- FULLSCREEN MENU -->
-<nav id="menu" class="fixed inset-0 bg-gray-800 hidden flex-col text-left z-40">
-  <ul class="text-2xl font-bold text-white grid grid-cols-1 lg:grid-cols-8 gap-16 max-w-7xl w-full mx-auto px-6">
+<nav id="menu" class="hidden z-40 fixed inset-0 flex-col bg-gray-800 py-30 text-left">
+  <ul class="gap-16 grid grid-cols-1 lg:grid-cols-8 mx-auto px-6 w-full max-w-7xl font-bold text-white text-2xl">
 
     
-    <li class=" col-span-1 lg:col-span-6 flex flex-col space-y-2 lg:space-y-10">
+    <li class="flex flex-col space-y-2 lg:space-y-10 col-span-1 lg:col-span-6">
       <!-- Destination -->
-      <div class=" border-b border-gray-700 py-4">
+      <div class="py-4 border-gray-700 border-b">
 
-        <button class="toggle-submenu block w-full text-left">Destinations</button>
+        <button class="block w-full text-left toggle-submenu">Destinations</button>
         <div class="hidden lg:block">
-        <ul class="submenu  grid mt-2 text-lg font-normal grid-cols-2  lg:grid-cols-5 text-center gap-4  lg:gap-6">
-          <li><a href="https://terra-indochina.com/It/destinations/vietnam.html" class="flex flex-col overflow-hidden hover:text-[#F7941D] ">
-                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/files/VN.jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-                                                    <span class="bg-white/10 w-full block py-1">Vietnam</span></a></li>
-          <li><a href="https://terra-indochina.com/It/destinations/cambodia.html" class="flex flex-col overflow-hidden hover:text-[#F7941D] ">
-                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/images/Cambodge-280%20(1)(3).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-                                                    <span class="bg-white/10 w-full block py-1">Cambodia</span></a></li>
-         <li><a href="https://terra-indochina.com/It/destinations/laos.html" class="flex flex-col overflow-hidden hover:text-[#F7941D] ">
-                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/files/Laos.JPG" class="object-cover mb-1 " loading="lazy" alt="#">
-                                                    <span class="bg-white/10 w-full block py-1">Laos</span></a></li>
-          <li><a href="https://terra-indochina.com/It/destinations/myanmar.html" class="flex flex-col overflow-hidden hover:text-[#F7941D] ">
-                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/files/MYANMAR.jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-                                                    <span class="bg-white/10 w-full block py-1">Myanmar</span></a></li>
-          <li><a href="https://terra-indochina.com/It/destinations/thailand.html" class="flex flex-col overflow-hidden hover:text-[#F7941D] ">
-                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/files/tha_bangkok_grandpalace_templeemeraldbuddha_dt_l_59116246%20(1).png" class="object-cover mb-1 " loading="lazy" alt="#">
-                                                    <span class="bg-white/10 w-full block py-1">Thailand</span></a></li>
+        <ul class="gap-4 lg:gap-6 grid grid-cols-2 lg:grid-cols-5 mt-2 font-normal text-lg text-center submenu">
+          <li><a href="https://terra-indochina.com/It/destinations/vietnam.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
+                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/files/VN.jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+                                                    <span class="block bg-white/10 py-1 w-full">Vietnam</span></a></li>
+          <li><a href="https://terra-indochina.com/It/destinations/cambodia.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
+                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/images/Cambodge-280%20(1)(3).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+                                                    <span class="block bg-white/10 py-1 w-full">Cambodia</span></a></li>
+         <li><a href="https://terra-indochina.com/It/destinations/laos.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
+                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/files/Laos.JPG" class="mb-1 object-cover" loading="lazy" alt="#">
+                                                    <span class="block bg-white/10 py-1 w-full">Laos</span></a></li>
+          <li><a href="https://terra-indochina.com/It/destinations/myanmar.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
+                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/files/MYANMAR.jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+                                                    <span class="block bg-white/10 py-1 w-full">Myanmar</span></a></li>
+          <li><a href="https://terra-indochina.com/It/destinations/thailand.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
+                                                    <img src="https://terra-indochina.com/ckfinder/userfiles/files/tha_bangkok_grandpalace_templeemeraldbuddha_dt_l_59116246%20(1).png" class="mb-1 object-cover" loading="lazy" alt="#">
+                                                    <span class="block bg-white/10 py-1 w-full">Thailand</span></a></li>
         </ul>
         </div>
       </div>
        <!-- Tour style -->
-       <div class=" border-b  border-gray-700 py-4">
-        <button class="toggle-submenu block w-full text-left">Stile di viaggio</button>
+       <div class="py-4 border-gray-700 border-b">
+        <button class="block w-full text-left toggle-submenu">Stile di viaggio</button>
         <div class="hidden lg:block">
-        <ul class="submenu  grid mt-2 text-lg font-normal grid-cols-2  lg:grid-cols-5 text-center gap-4  lg:gap-6">          
+        <ul class="gap-4 lg:gap-6 grid grid-cols-2 lg:grid-cols-5 mt-2 font-normal text-lg text-center submenu">          
           <li><a href="https://www.terra-indochina.com/It/style-tour/viaggi-classici-.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/RTTS_1(1).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/RTTS_1(1).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Viaggi classici</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/style-tour/viaggi-culturali-.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Culture-home-menu(1).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Culture-home-menu(1).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Viaggi culturali</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/style-tour/viaggi-di-nozze-.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/HNM-home%20menu(2).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/HNM-home%20menu(2).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Viaggi di nozze</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/style-tour/viaggi-in-famiglia-.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Family-menu(1).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Family-menu(1).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Viaggi in famiglia</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/style-tour/viaggi-di-lusso-.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Luxury-menu%20home(2).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Luxury-menu%20home(2).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Viaggi di lusso</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/style-tour/viaggi-culinari-.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Cuisine-Home%20menu(2).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Cuisine-Home%20menu(2).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Viaggi culinari</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/style-tour/viaggi-attivi-.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Active-menu(1).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Active-menu(1).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Viaggi attivi</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/style-tour/vacanze-al-mare-.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Beach%20holiday-menu(1).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/Beach%20holiday-menu(1).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Vacanze al mare</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/style-tour/partenze-garantite.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/SIC-menu(1).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/SIC-menu(1).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             Partenze garantite</span></a></li>
           <li><a href="https://www.terra-indochina.com/It/mice.html" class="flex flex-col overflow-hidden hover:text-[#F7941D]">
-             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/MICE-home-menu(1).jpg" class="object-cover mb-1 " loading="lazy" alt="#">
-             <span class="bg-white/10 w-full block py-1">
+             <img src="https://www.terra-indochina.com/ckfinder/userfiles/files/MICE-home-menu(1).jpg" class="mb-1 object-cover" loading="lazy" alt="#">
+             <span class="block bg-white/10 py-1 w-full">
             MICE</span></a></li>
         </ul>
         </div>
       </div>
     </li>
 <!-- Menu không cha-con -->
-     <li class="col-span-1 lg:col-span-2 flex flex-col space-y-6 text-xl font-bold md:ps-10 md:border-l border-0 ps-0 border-gray-700">
+     <li class="flex flex-col space-y-6 col-span-1 lg:col-span-2 ps-0 md:ps-10 border-0 border-gray-700 md:border-l font-bold text-xl">
       <a href="#" class="hover:text-[#F7941D]">Chi siamous</a>
       <a href="#" class="hover:text-[#F7941D]">MICE</a>
       <a href="#" class="hover:text-[#F7941D]">Viaggio sostenibile</a>
@@ -148,145 +148,139 @@
   </ul>
 </nav>
   <!-- HERO SLIDER -->
-  <section class="swiper hero-slider relative md:pt-[104px]">
+  <section class="relative md:pt-[104px] swiper hero-slider">
     <div class="swiper-wrapper">
-      <div class="swiper-slide relative">
+      <div class="relative swiper-slide">
         <img src="images/b1.jpg" alt="Halong Bay" class="w-full h-[40vh] md:h-[88vh] object-cover" data-swiper-parallax="-20%">
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full 
-                    bg-white/60 backdrop-blur-md px-4 py-2 text-center" data-swiper-parallax="-200">
-          <p class="text-[#6D5044] font-bold text-base md:text-xl">
+        <div class="bottom-0 left-1/2 absolute bg-white/60 backdrop-blur-md px-4 py-2 w-full text-center -translate-x-1/2" data-swiper-parallax="-200">
+          <p class="font-bold text-[#6D5044] text-base md:text-xl">
             Baia di Halong – Vietnam
           </p>
         </div>
       </div>
-      <div class="swiper-slide relative">
+      <div class="relative swiper-slide">
         <img src="images/b2.jpg" alt="Cambogia" class="w-full h-[40vh] md:h-[88vh] object-cover"  data-swiper-parallax="-20%">
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full 
-                    bg-white/60 backdrop-blur-md px-4 py-2  text-center" data-swiper-parallax="-200">
-          <p class="text-[#6D5044] font-bold text-base md:text-xl">
+        <div class="bottom-0 left-1/2 absolute bg-white/60 backdrop-blur-md px-4 py-2 w-full text-center -translate-x-1/2" data-swiper-parallax="-200">
+          <p class="font-bold text-[#6D5044] text-base md:text-xl">
             Mekong delta - Vietnam
           </p>
         </div>
       </div>
-      <div class="swiper-slide relative">
+      <div class="relative swiper-slide">
         <img src="images/b3.jpg" alt="Cambogia" class="w-full h-[40vh] md:h-[88vh] object-cover"  data-swiper-parallax="-20%">
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full 
-                    bg-white/60 backdrop-blur-md px-4 py-2  text-center" data-swiper-parallax="-200">
-          <p class="text-[#6D5044] font-bold text-base md:text-xl">
+        <div class="bottom-0 left-1/2 absolute bg-white/60 backdrop-blur-md px-4 py-2 w-full text-center -translate-x-1/2" data-swiper-parallax="-200">
+          <p class="font-bold text-[#6D5044] text-base md:text-xl">
             Cyclo tra le risaie – Vietnam
           </p>
         </div>
       </div>
-      <div class="swiper-slide relative">
+      <div class="relative swiper-slide">
         <img src="images/b4.jpg" alt="Cambogia" class="w-full h-[40vh] md:h-[88vh] object-cover"  data-swiper-parallax="-20%">
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full 
-                    bg-white/60 backdrop-blur-md px-4 py-2  text-center" data-swiper-parallax="-200">
-          <p class="text-[#6D5044] font-bold text-base md:text-xl">
+        <div class="bottom-0 left-1/2 absolute bg-white/60 backdrop-blur-md px-4 py-2 w-full text-center -translate-x-1/2" data-swiper-parallax="-200">
+          <p class="font-bold text-[#6D5044] text-base md:text-xl">
             Angkor Wat – Cambodia
           </p>
         </div>
       </div>
-       <div class="swiper-slide relative">
+       <div class="relative swiper-slide">
         <img src="images/b5.jpg" alt="Cambogia" class="w-full h-[40vh] md:h-[88vh] object-cover"  data-swiper-parallax="-20%">
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full 
-                    bg-white/60 backdrop-blur-md px-4 py-2  text-center" data-swiper-parallax="-200">
-          <p class="text-[#6D5044] font-bold text-base md:text-xl">
+        <div class="bottom-0 left-1/2 absolute bg-white/60 backdrop-blur-md px-4 py-2 w-full text-center -translate-x-1/2" data-swiper-parallax="-200">
+          <p class="font-bold text-[#6D5044] text-base md:text-xl">
             Luangprabang – Laos
           </p>
         </div>
       </div>
-       <div class="swiper-slide relative">
+       <div class="relative swiper-slide">
         <img src="images/b6.jpg" alt="Cambogia" class="w-full h-[40vh] md:h-[88vh] object-cover"  data-swiper-parallax="-20%">
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full 
-                    bg-white/60 backdrop-blur-md px-4 py-2  text-center" data-swiper-parallax="-200">
-          <p class="text-[#6D5044] font-bold text-base md:text-xl">
+        <div class="bottom-0 left-1/2 absolute bg-white/60 backdrop-blur-md px-4 py-2 w-full text-center -translate-x-1/2" data-swiper-parallax="-200">
+          <p class="font-bold text-[#6D5044] text-base md:text-xl">
             Mai Chau Ecologe – Vietnam
           </p>
         </div>
       </div>
     </div>
-    <div class="swiper-button-prev text-white"></div>
-    <div class="swiper-button-next text-white"></div>
+    <div class="text-white swiper-button-prev"></div>
+    <div class="text-white swiper-button-next"></div>
   </section>
 
   <!-- CTA -->
-  <div class="text-center border-2 border-gray-600 p-5 rounded-xl max-w-6xl mx-4 lg:mx-auto my-10">
-    <h2 class="text-[#F7941D] inline-block rounded font-bold text-lg md:text-2xl">
-      <span class="text-2xl lg:text-2xl">Alla ricerca di</span> <span class="text-[#6D5044] block lg:inline-block">NUOVO PARTNER DI COLLABORAZIONE</span>
+  <div class="mx-4 lg:mx-auto my-10 p-5 border-2 border-gray-600 rounded-xl max-w-6xl text-center">
+    <h2 class="inline-block rounded font-bold text-[#F7941D] text-lg md:text-2xl">
+      <span class="text-2xl lg:text-2xl">Alla ricerca di</span> <span class="block lg:inline-block text-[#6D5044]">NUOVO PARTNER DI COLLABORAZIONE</span>
     </h2>
   </div>
 
   <!-- CHI SIAMO / CHI CERCHIAMO -->
-  <section class="px-4 py-8 grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+  <section class="gap-12 grid md:grid-cols-2 mx-auto px-4 py-8 max-w-6xl">
     <div>
-      <h2 class="text-[#F7941D] font-bold text-lg md:text-2xl border-b-1  pb-2 mb-4 border-[#F7941D]/40">CHI SIAMO</h2>
+      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl">CHI SIAMO</h2>
       <p class="lg:text-lg"><strong>Terra Indochina</strong> è un <strong>tour operator</strong> specializzato nell’organizzazione di viaggi
 inbound, con oltre 24 anni di esperienza nel settore. Con un team di oltre 50
 dipendenti a tempo pieno e una rete di centinaia di guide parlanti italiano, ogni anno
 organizziamo viaggi per migliaia di <strong>turisti italiani</strong> in Vietnam, Laos e Cambogia.</p>
     </div>
     <div>
-      <h2 class="text-[#F7941D] font-bold text-lg md:text-2xl border-b-1  pb-2 mb-4 border-[#F7941D]/40">CHI CERCHIAMO</h2>
+      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl">CHI CERCHIAMO</h2>
       <p class="lg:text-lg">Se siete <strong>un’agenzia di viaggi italiana</strong>, i vostri clienti desiderano viaggiare in Vietnam, Laos o Cambogia e siete alla ricerca di un <strong>partner locale
 affidabile</strong> per rappresentarvi e organizzare i tour, Terra Indochina è la scelta ideale per voi.</p>
     </div>
   </section>
 
   <!-- COSA FACCIAMO -->
-  <section class="px-4 py-6 max-w-6xl mx-auto">
-    <div class="border-2 border-gray-600 p-6 rounded-xl lg:flex lg:items-start lg:gap-24">
-      <h2 class="text-[#F7941D] font-bold text-2xl md:text-3xl border-b-1  pb-2 mb-4 border-[#F7941D]/40">COSA FACCIAMO</h2>
+  <section class="mx-auto px-4 py-6 max-w-6xl">
+    <div class="lg:flex lg:items-start lg:gap-24 p-6 border-2 border-gray-600 rounded-xl">
+      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-2xl md:text-3xl">COSA FACCIAMO</h2>
       <ul class="space-y-2 lg:text-lg">
-        <li class="flex items-start"><iconify-icon icon="mdi:checkbox-blank-circle" class="text-gray-400 mr-2 mt-0.5 text-[.75rem] pt-1.5"></iconify-icon> <span>Specializzati in viaggi <strong>FIT (2 - 8 pax)</strong> con servizi privati e completamente personalizzati.
+        <li class="flex items-start"><iconify-icon icon="mdi:checkbox-blank-circle" class="mt-0.5 mr-2 pt-1.5 text-[.75rem] text-gray-400"></iconify-icon> <span>Specializzati in viaggi <strong>FIT (2 - 8 pax)</strong> con servizi privati e completamente personalizzati.
 </span></li>
-        <li class="flex items-start"><iconify-icon icon="mdi:checkbox-blank-circle" class="text-gray-400 mr-2 mt-0.5 text-[.75rem] pt-1.5"></iconify-icon> <span>Tour <strong>SIC</strong> con partenze settimanali garantite.</span></li>
+        <li class="flex items-start"><iconify-icon icon="mdi:checkbox-blank-circle" class="mt-0.5 mr-2 pt-1.5 text-[.75rem] text-gray-400"></iconify-icon> <span>Tour <strong>SIC</strong> con partenze settimanali garantite.</span></li>
       </ul>
     </div>
   </section>
 
   <!-- PERCHE COLLABORARE -->
-  <section class="px-4 py-8 max-w-6xl mx-auto">
-    <h2 class="text-[#F7941D] font-bold text-lg md:text-2xl border-b-1  pb-2 mb-4 border-[#F7941D]/40">PERCHÉ COLLABORARE CON NOI</h2>
+  <section class="mx-auto px-4 py-8 max-w-6xl">
+    <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl">PERCHÉ COLLABORARE CON NOI</h2>
     <ul class="space-y-2 lg:text-lg">
-      <li class="flex items-start"><iconify-icon icon="mdi:check" class="text-gray-400 mr-2 mt-0.5 text-lg pt-1"></iconify-icon> <span>Garantiamo un <strong>servizio eccellente</strong> per i vostri clienti, seguiti
+      <li class="flex items-start"><iconify-icon icon="mdi:check" class="mt-0.5 mr-2 pt-1 text-gray-400 text-lg"></iconify-icon> <span>Garantiamo un <strong>servizio eccellente</strong> per i vostri clienti, seguiti
  con cura in ogni fase del viaggio.</span></li>
-      <li class="flex items-start"><iconify-icon icon="mdi:check" class="text-gray-400 mr-2 mt-0.5 text-lg pt-1"></iconify-icon> <span>Siamo <strong>esperti nel mercato italiano</strong>: poche aziende comprendono i clienti italiani come noi.</span></li>
-      <li class="flex items-start"><iconify-icon icon="mdi:check" class="text-gray-400 mr-2 mt-0.5 text-lg pt-1"></iconify-icon> <span>Il nostro staff è composto da <strong>vietnamiti che hanno studiato in Italia</strong>, parlano italiano fluentemente e comprendono
+      <li class="flex items-start"><iconify-icon icon="mdi:check" class="mt-0.5 mr-2 pt-1 text-gray-400 text-lg"></iconify-icon> <span>Siamo <strong>esperti nel mercato italiano</strong>: poche aziende comprendono i clienti italiani come noi.</span></li>
+      <li class="flex items-start"><iconify-icon icon="mdi:check" class="mt-0.5 mr-2 pt-1 text-gray-400 text-lg"></iconify-icon> <span>Il nostro staff è composto da <strong>vietnamiti che hanno studiato in Italia</strong>, parlano italiano fluentemente e comprendono
 perfettamente le esigenze delle agenzie italiane.</span></li>
     </ul>
   </section>
 
   <!-- CONTATTI -->
-  <section class="px-4 py-8 max-w-6xl mx-auto ">
-    <h2 class="text-[#F7941D] font-bold text-lg md:text-2xl border-b-1 bg-gray-50 md:text-center  p-2 mb-4 border-[#F7941D]/40">CONTATTACI</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class=" flex item-start flex-wrap">
-        <div class="w-full mb-3">
+  <section class="mx-auto px-4 py-8 max-w-6xl">
+    <h2 class="bg-gray-50 mb-4 p-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl md:text-center">CONTATTACI</h2>
+    <div class="gap-6 grid md:grid-cols-2">
+      <div class="flex flex-wrap item-start">
+        <div class="mb-3 w-full">
           Per una conversazione introduttiva: contattate il nostro rappresentante 
         </div>
-        <img src="images/1.jpg" alt="Riccardo Cellerino" class="w-24 h-24 md:w-32 md:h-32 mr-4 rounded-full object-cover">
-        <div class="flex flex-col  gap-1 flex-grow-1">
-          <p class="font-bold mt-2 text-[#6D5044] text-sm md:text-base">Sig. Riccardo Cellerino</p>
-           <a class="text-lg text-[#F7941D] font-medium" href="mailto:riccardo.cellerino@gmail.com">riccardo.cellerino@gmail.com</a>
+        <img src="images/1.jpg" alt="Riccardo Cellerino" class="mr-4 rounded-full w-24 md:w-32 h-24 md:h-32 object-cover">
+        <div class="flex flex-col flex-grow-1 gap-1">
+          <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-base">Sig. Riccardo Cellerino</p>
+           <a class="font-medium text-[#F7941D] text-lg" href="mailto:riccardo.cellerino@gmail.com">riccardo.cellerino@gmail.com</a>
           <a class="text-lg" href="#">+39 338 1738 191</a>
         </div>
       </div>
-      <div class=" flex item-start flex-wrap">
-       <div class="w-full mb-3">
+      <div class="flex flex-wrap item-start">
+       <div class="mb-3 w-full">
           Per una richiesta di pareventivo: <br><br>
        </div>
-        <img src="images/2.jpg" alt="Ngoc Mai" class="w-24 h-24 md:w-32 md:h-32 mr-4 rounded-full object-cover">
-        <div class="flex flex-col  gap-1 flex-grow-1">
-          <p class="font-bold mt-2 text-[#6D5044] text-sm md:text-base">Sig.ra Ngoc Mai</p>
-          <a class="text-lg text-[#F7941D] font-medium" href="mailto:ngoc.mai@terra-indochina.com">ngoc.mai@terra-indochina.com</a>
+        <img src="images/2.jpg" alt="Ngoc Mai" class="mr-4 rounded-full w-24 md:w-32 h-24 md:h-32 object-cover">
+        <div class="flex flex-col flex-grow-1 gap-1">
+          <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-base">Sig.ra Ngoc Mai</p>
+          <a class="font-medium text-[#F7941D] text-lg" href="mailto:ngoc.mai@terra-indochina.com">ngoc.mai@terra-indochina.com</a>
           <a class="text-lg" href="#">+84 987 888 171</a>
         </div>
       </div>
     </div>
-    <div class="max-w-6xl items-start md:items-center mx-auto mt-6 flex flex-col md:flex-row  gap-1 p-4" style="border-radius: 12px;
+    <div class="flex md:flex-row flex-col items-start md:items-center gap-1 mx-auto mt-6 p-4 max-w-6xl" style="border-radius: 12px;
 border: 1px solid #FFF2E2; background: linear-gradient(0deg, rgba(255, 242, 226, 0.60) 0%, #FFF2E2 100%);">
-       <img src="images/hc.jpg" alt="Ngoc Mai" class="w-24 h-24 md:w-32 md:h-32 mr-4  rounded-lg border border-gray-600 object-cover flex-shrink-0">
-        <div class=" md:mt-0 mt-3">
+       <img src="images/hc.jpg" alt="Ngoc Mai" class="flex-shrink-0 mr-4 border border-gray-600 rounded-lg w-24 md:w-32 h-24 md:h-32 object-cover">
+        <div class="mt-3 md:mt-0">
 Vi aspettiamo al   <strong>TTG Rimini 2025 – TERRA INDOCHINA, Padiglione C3, Stand 219 – dall’8 al 10 Ottobre Vi aspettiamo al </strong>. Per fissare un appuntamento, sia durante le nostre call
 pre/post-fiera che direttamente in fiera, vi invitiamo a contattare la Sig.ra Ngoc Mai via email: <a href="mailto:ngoc.mai@terra-indochina.com">ngoc.mai@terra-indochina.com</a>
 
@@ -294,89 +288,89 @@ pre/post-fiera che direttamente in fiera, vi invitiamo a contattare la Sig.ra Ng
   </section>
 
   <!-- TEAM SLIDER -->
-  <section class="px-4 py-8 max-w-6xl mx-auto">
-    <h2 class="text-[#F7941D] font-bold text-lg md:text-2xl border-b-1 bg-gray-50 md:text-center  p-2 mb-4 border-[#F7941D]/40">LA NOSTRA SQUADRA</h2>
-    <p class="text-center mb-8 text-base md:text-xl text-gray-700">Siamo un DMC B2B con sede in Vietnam da 24 anni</p>
-    <div class="swiper team-slider relative mx-auto">
+  <section class="mx-auto px-4 py-8 max-w-6xl">
+    <h2 class="bg-gray-50 mb-4 p-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl md:text-center">LA NOSTRA SQUADRA</h2>
+    <p class="mb-8 text-gray-700 text-base md:text-xl text-center">Siamo un DMC B2B con sede in Vietnam da 24 anni</p>
+    <div class="relative mx-auto swiper team-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="images/ab1.jpg" alt="Team" class="w-full rounded-lg">
+          <img src="images/ab1.jpg" alt="Team" class="rounded-lg w-full">
         </div>
         <div class="swiper-slide">
-          <img src="images/ab3.jpg" alt="Team 2" class="w-full rounded-lg">
+          <img src="images/ab3.jpg" alt="Team 2" class="rounded-lg w-full">
         </div>
          <div class="swiper-slide">
-          <img src="images/ab2.jpg" alt="Team 2" class="w-full rounded-lg">
+          <img src="images/ab2.jpg" alt="Team 2" class="rounded-lg w-full">
         </div>
       </div>
-      <div class="swiper-button-prev text-white"></div>
-      <div class="swiper-button-next text-white"></div>
+      <div class="text-white swiper-button-prev"></div>
+      <div class="text-white swiper-button-next"></div>
     </div>
   </section>
 
   <!-- TEAM MEMBERS -->
-  <section class="px-4 py-10 max-w-2xl mx-auto">
+  <section class="mx-auto px-4 py-10 max-w-2xl">
 
     <!-- 2 lãnh đạo -->
-    <div class="grid grid-cols-2 gap-6 text-center mb-10">
+    <div class="gap-6 grid grid-cols-2 mb-10 text-center">
       <div>
-        <p class="text-xs md:text-lg font-bold ">Presidente del gruppo</p>
-        <img src="images/3.jpg" class="w-24 h-24 md:w-48 md:h-48 my-2 mx-auto rounded-lg object-cover">
-        <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-md">Nguyen Manh Hoa</p>
+        <p class="font-bold text-xs md:text-lg">Presidente del gruppo</p>
+        <img src="images/3.jpg" class="mx-auto my-2 rounded-lg w-24 md:w-48 h-24 md:h-48 object-cover">
+        <p class="mt-2 font-bold text-[#6D5044] md:text-md text-sm">Nguyen Manh Hoa</p>
         
       </div>
       <div>
-         <p class="text-xs md:text-lg font-bold ">Amministratrice delegata</p>
-        <img src="images/4.jpg" class="w-24 h-24 md:w-48 md:h-48 my-2 mx-auto rounded-lg object-cover">
-        <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-md">Nguyen Thi Mai</p>
+         <p class="font-bold text-xs md:text-lg">Amministratrice delegata</p>
+        <img src="images/4.jpg" class="mx-auto my-2 rounded-lg w-24 md:w-48 h-24 md:h-48 object-cover">
+        <p class="mt-2 font-bold text-[#6D5044] md:text-md text-sm">Nguyen Thi Mai</p>
        
       </div>
     </div>
 
     <!-- 2 management -->    
-    <div class="grid grid-cols-2 gap-6 text-center mb-10">
+    <div class="gap-6 grid grid-cols-2 mb-10 text-center">
       <div>
-        <p class="text-xs md:text-lg font-bold ">Rappresentante in Italia</p>
-        <img src="images/1.jpg" class="w-24 h-24 md:w-40 md:h-40 my-2 mx-auto rounded-lg object-cover">
-        <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-md">Riccardo Cellerino</p>
+        <p class="font-bold text-xs md:text-lg">Rappresentante in Italia</p>
+        <img src="images/1.jpg" class="mx-auto my-2 rounded-lg w-24 md:w-40 h-24 md:h-40 object-cover">
+        <p class="mt-2 font-bold text-[#6D5044] md:text-md text-sm">Riccardo Cellerino</p>
       </div>
       <div>
-        <p class="text-xs md:text-lg font-bold ">Responsabile vendite</p>
-        <img src="images/2.jpg" class="w-24 h-24 md:w-40 md:h-40 my-2 mx-auto rounded-lg object-cover">
-        <p class="font-bold text-[#6D5044] text-sm md:text-md">Hoang Ngoc Mai</p>
+        <p class="font-bold text-xs md:text-lg">Responsabile vendite</p>
+        <img src="images/2.jpg" class="mx-auto my-2 rounded-lg w-24 md:w-40 h-24 md:h-40 object-cover">
+        <p class="font-bold text-[#6D5044] md:text-md text-sm">Hoang Ngoc Mai</p>
        
       </div>
     </div>
 
     <!-- 4 Sale -->
-    <h3 class="text-center font-bold mb-6 text-lg md:text-xl">Il nostro team di consulenti di viaggio</h3>
-    <div class="grid grid-cols-4 gap-6 text-center mb-10">
-      <div><img src="images/s1.jpg" class="w-20 h-20 md:w-32 md:h-32 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-md">Huyen</p></div>
-      <div><img src="images/s2.jpg" class="w-20 h-20 md:w-32 md:h-32 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-md">Tra</p></div>
-      <div><img src="images/s3.jpg" class="w-20 h-20 md:w-32 md:h-32 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-md">Ngan</p></div>
-      <div><img src="images/s4.jpg" class="w-20 h-20 md:w-32 md:h-32 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-md">Yen</p></div>
+    <h3 class="mb-6 font-bold text-lg md:text-xl text-center">Il nostro team di consulenti di viaggio</h3>
+    <div class="gap-6 grid grid-cols-4 mb-10 text-center">
+      <div><img src="images/s1.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-sm">Huyen</p></div>
+      <div><img src="images/s2.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-sm">Tra</p></div>
+      <div><img src="images/s3.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-sm">Ngan</p></div>
+      <div><img src="images/s4.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-sm">Yen</p></div>
     </div>
 
     <!-- 10 Guide -->
-    <h3 class="text-center font-bold mb-6 text-lg md:text-xl">Le nostre guide parlanti italiano</h3>
-    <div class="grid grid-cols-5 gap-4 text-center max-w-2xl mx-auto">
-      <div><img src="images/g1.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g2.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g3.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g4.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g5.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g6.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g7.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g8.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g9.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
-      <div><img src="images/g10.jpg" class="w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full object-cover"></div>
+    <h3 class="mb-6 font-bold text-lg md:text-xl text-center">Le nostre guide parlanti italiano</h3>
+    <div class="gap-4 grid grid-cols-5 mx-auto max-w-2xl text-center">
+      <div><img src="images/g1.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g2.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g3.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g4.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g5.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g6.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g7.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g8.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g9.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
+      <div><img src="images/g10.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="text-center py-4 md:py-6 border rounded-lg md:rounded-none md:border-0 md:border-t md:m-0 md:mt-10 m-4">
+  <footer class="m-4 md:m-0 md:mt-10 py-4 md:py-6 border md:border-0 md:border-t rounded-lg md:rounded-none text-center">
     <p class="text-xs md:text-lg">PER MAGGIORI INFORMAZIONI, VISITATE IL NOSTRO SITO:</p>
-    <a href="https://www.terra-indochina.com" class="text-[#F7941D] font-bold text-2xl">www.terra-indochina.com</a>
+    <a href="https://www.terra-indochina.com" class="font-bold text-[#F7941D] text-2xl">www.terra-indochina.com</a>
   </footer>
 
   <!-- Swiper init -->

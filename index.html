@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terra Indochina DMC</title>
+  
+  <!-- Tailwind v4 -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body class="font-sans text-gray-700 lg:text-lg">
+
+  <!-- HEADER -->
+  <header class="flex items-center justify-between px-4 py-3 border-b ">
+    <div class="flex items-center space-x-2">
+      <img src="images/logo.png" alt="Logo" class="h-10">
+      <span class="text-[#F7941D] font-semibold">Terra Indochina DMC</span>
+    </div>
+    <button class="lg:hidden">
+      <iconify-icon icon="mdi:menu" class="text-3xl text-[#F7941D]"></iconify-icon>
+    </button>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="swiper hero-slider relative">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide relative">
+        <img src="images/banner1.jpg" alt="Halong Bay" class="w-full h-[60vh] md:h-[80vh] object-cover">
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 
+                    bg-white/60 backdrop-blur-md px-4 py-2 rounded-lg text-center">
+          <p class="text-[#6D5044] font-bold text-base md:text-xl">
+            Baia di Halong – Vietnam
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide relative">
+        <img src="images/banner2.jpg" alt="Cambogia" class="w-full h-[60vh] md:h-[80vh] object-cover">
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 
+                    bg-white/60 backdrop-blur-md px-4 py-2 rounded-lg text-center">
+          <p class="text-[#6D5044] font-bold text-base md:text-xl">
+            Cambogia – Laos
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev text-white"></div>
+    <div class="swiper-button-next text-white"></div>
+  </section>
+
+  <!-- CTA -->
+  <div class="text-center border-2 border-gray-600 p-3 rounded-xl max-w-6xl mx-auto mb-5">
+    <h2 class="text-[#F7941D] px-4 py-2 inline-block rounded font-bold text-xl md:text-2xl">
+      Alla ricerca di <span class="text-[#6D5044]">NUOVO PARTNER DI COLLABORAZIONE</span>
+    </h2>
+  </div>
+
+  <!-- CHI SIAMO / CHI CERCHIAMO -->
+  <section class="px-4 py-8 grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+    <div>
+      <h2 class="text-[#F7941D] font-bold mb-2 text-lg md:text-2xl border-b-1  pb-2 mb-4 border-[#F7941D]/40">CHI SIAMO</h2>
+      <p class="lg:text-lg"><strong>Terra Indochina</strong> è un <strong>tour operator</strong> specializzato nell’organizzazione di viaggi
+inbound, con oltre 24 anni di esperienza nel settore. Con un team di oltre 50
+dipendenti a tempo pieno e una rete di centinaia di guide parlanti italiano, ogni anno
+organizziamo viaggi per migliaia di <strong>turisti italiani</strong> in Vietnam, Laos e Cambogia.</p>
+    </div>
+    <div>
+      <h2 class="text-[#F7941D] font-bold mb-2 text-lg md:text-2xl border-b-1  pb-2 mb-4 border-[#F7941D]/40">CHI CERCHIAMO</h2>
+      <p class="lg:text-lg">Se siete <strong>un’agenzia di viaggi italiana</strong>, i vostri clienti desiderano viaggiare in Vietnam, Laos o Cambogia e siete alla ricerca di un <strong>partner locale
+affidabile</strong> per rappresentarvi e organizzare i tour, Terra Indochina è la scelta ideale per voi.</p>
+    </div>
+  </section>
+
+  <!-- COSA FACCIAMO -->
+  <section class="px-4 py-6 max-w-6xl mx-auto">
+    <div class="border-2 border-gray-600 p-6 rounded-xl lg:flex lg:items-start lg:gap-24">
+      <h2 class="text-[#F7941D] font-bold mb-2 text-lg md:text-2xl border-b-1  pb-2 mb-4 border-[#F7941D]/40">COSA FACCIAMO</h2>
+      <ul class="space-y-2 lg:text-lg">
+        <li class="flex items-start"><iconify-icon icon="mdi:checkbox-blank-circle" class="text-gray-400 mr-2 mt-0.5 text-[.75rem] pt-1.5"></iconify-icon> <span>Specializzati in viaggi <strong>FIT (2 - 8 pax)</strong> con servizi privati e completamente personalizzati.
+</span></li>
+        <li class="flex items-start"><iconify-icon icon="mdi:checkbox-blank-circle" class="text-gray-400 mr-2 mt-0.5 text-[.75rem] pt-1.5"></iconify-icon> <span>Tour <strong>SIC</strong> con partenze settimanali garantite.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PERCHE COLLABORARE -->
+  <section class="px-4 py-8 max-w-6xl mx-auto">
+    <h2 class="text-[#F7941D] font-bold mb-2 text-lg md:text-2xl border-b-1  pb-2 mb-4 border-[#F7941D]/40">PERCHÉ COLLABORARE CON NOI</h2>
+    <ul class="space-y-2 lg:text-lg">
+      <li class="flex items-start"><iconify-icon icon="mdi:check" class="text-gray-400 mr-2 mt-0.5 text-lg pt-1"></iconify-icon> <span>Garantiamo un <strong>servizio eccellente</strong> per i vostri clienti, seguiti
+ con cura in ogni fase del viaggio.</span></li>
+      <li class="flex items-start"><iconify-icon icon="mdi:check" class="text-gray-400 mr-2 mt-0.5 text-lg pt-1"></iconify-icon> <span>Siamo <strong>esperti nel mercato italiano</strong>: poche aziende comprendono i clienti italiani come noi.</span></li>
+      <li class="flex items-start"><iconify-icon icon="mdi:check" class="text-gray-400 mr-2 mt-0.5 text-lg pt-1"></iconify-icon> <span>Il nostro staff è composto da <strong>vietnamiti che hanno studiato in Italia</strong>, parlano italiano fluentemente e comprendono
+perfettamente le esigenze delle agenzie italiane.</span></li>
+    </ul>
+  </section>
+
+  <!-- CONTATTI -->
+  <section class="px-4 py-8 max-w-6xl mx-auto ">
+    <h2 class="text-[#F7941D] font-bold mb-2 text-lg md:text-2xl border-b-1 bg-gray-50 md:text-center  p-2 mb-4 border-[#F7941D]/40">CONTATTACI</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class=" flex item-start flex-wrap">
+        <div class="w-full mb-3">
+          Per una conversazione introduttiva: contattate il nostro
+  rappresentante 
+        </div>
+        <img src="images/riccardo.jpg" alt="Riccardo Cellerino" class="w-24 h-24 md:w-32 md:h-32 mr-4 rounded-full object-cover">
+        <div class="flex flex-col  gap-1 flex-grow-1">
+          <p class="font-bold mt-2 text-[#6D5044] text-sm md:text-base">Sig. Riccardo Cellerino</p>
+           <a class="text-xs md:text-lg text-gray-600" href="#">riccardo.cellerino@gmail.com</a>
+          <a class="text-xs md:text-lg" href="#">+39 338 1738 191</a>
+        </div>
+      </div>
+      <div class=" flex item-start flex-wrap">
+       <div class="w-full mb-3">
+          Per una richiesta di pareventivo: <br><br>
+       </div>
+        <img src="images/ngocmai.jpg" alt="Ngoc Mai" class="w-24 h-24 md:w-32 md:h-32 mr-4 rounded-full object-cover">
+        <div class="flex flex-col  gap-1 flex-grow-1">
+          <p class="font-bold mt-2 text-[#6D5044] text-sm md:text-base">Sig.ra Ngoc Mai</p>
+          <a class="text-xs md:text-lg text-gray-600" href="#">ngoc.mai@terra-indochina.com</a>
+          <a class="text-xs md:text-lg" href="#">+84 987 888 171</a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl d-flex items-center mx-auto mt-6 flex  gap-1 p-3" style="border-radius: 12px;
+border: 1px solid #FFF2E2; background: linear-gradient(0deg, rgba(255, 242, 226, 0.60) 0%, #FFF2E2 100%);">
+       <img src="images/ngocmai.jpg" alt="Ngoc Mai" class="w-24 h-24 md:w-32 md:h-32 mr-4 rounded-full object-cover flex-shrink-0">
+        <div>
+Vi aspettiamo al   <strong>TTG Rimini 2025 – TERRA INDOCHINA, Padiglione C3, Stand 219 – dall’8 al 10 Ottobre Vi aspettiamo al </strong>. Per fissare un appuntamento, sia durante le nostre call
+pre/post-fiera che direttamente in fiera, vi invitiamo a contattare la Sig.ra Ngoc Mai via email: <a href="mailto:ngoc.mai@terra-indochina.com">ngoc.mai@terra-indochina.com</a>
+
+        </div>
+  </section>
+
+  <!-- TEAM SLIDER -->
+  <section class="px-4 py-8 max-w-6xl mx-auto">
+    <h2 class="text-[#F7941D] font-bold mb-2 text-lg md:text-2xl border-b-1 bg-gray-50 md:text-center  p-2 mb-4 border-[#F7941D]/40">LA NOSTRA SQUADRA</h2>
+    <p class="text-center mb-8 text-base md:text-xl text-gray-700">Siamo un DMC B2B con sede in Vietnam da 24 anni</p>
+    <div class="swiper team-slider relative max-w-4xl mx-auto">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/team1.jpg" alt="Team" class="w-full rounded-lg">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/team2.jpg" alt="Team 2" class="w-full rounded-lg">
+        </div>
+      </div>
+      <div class="swiper-button-prev text-white"></div>
+      <div class="swiper-button-next text-white"></div>
+    </div>
+  </section>
+
+  <!-- TEAM MEMBERS -->
+  <section class="px-4 py-10 bg-gray-50 max-w-6xl mx-auto">
+
+    <!-- 2 lãnh đạo -->
+    <h3 class="text-center text-[#F7941D] font-bold mb-6 text-lg md:text-xl">Presidente & Amministratrice</h3>
+    <div class="grid grid-cols-2 gap-6 text-center mb-10">
+      <div>
+        <img src="images/hoa.jpg" class="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-lg object-cover">
+        <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-base">Nguyen Manh Hoa</p>
+        <p class="text-xs md:text-sm text-gray-600">Presidente del gruppo</p>
+      </div>
+      <div>
+        <img src="images/mai.jpg" class="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-lg object-cover">
+        <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-base">Nguyen Thi Mai</p>
+        <p class="text-xs md:text-sm text-gray-600">Amministratrice delegata</p>
+      </div>
+    </div>
+
+    <!-- 2 management -->
+    <h3 class="text-center text-[#F7941D] font-bold mb-6 text-lg md:text-xl">Management</h3>
+    <div class="grid grid-cols-2 gap-6 text-center mb-10">
+      <div>
+        <img src="images/riccardo.jpg" class="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-lg object-cover">
+        <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-base">Riccardo Cellerino</p>
+        <p class="text-xs md:text-sm text-gray-600">Rappresentante in Italia</p>
+      </div>
+      <div>
+        <img src="images/ngocmai.jpg" class="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-lg object-cover">
+        <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-base">Hoang Ngoc Mai</p>
+        <p class="text-xs md:text-sm text-gray-600">Responsabile vendite</p>
+      </div>
+    </div>
+
+    <!-- 4 Sale -->
+    <h3 class="text-center text-[#F7941D] font-bold mb-6 text-lg md:text-xl">Team di Consulenti di Viaggio</h3>
+    <div class="grid grid-cols-4 gap-6 text-center mb-10">
+      <div><img src="images/huyen.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Huyen</p></div>
+      <div><img src="images/trang.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Trang</p></div>
+      <div><img src="images/tra.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Tra</p></div>
+      <div><img src="images/ngan.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Ngan</p></div>
+    </div>
+
+    <!-- 10 Guide -->
+    <h3 class="text-center text-[#F7941D] font-bold mb-6 text-lg md:text-xl">Le nostre Guide Parlanti Italiano</h3>
+    <div class="grid grid-cols-5 gap-6 text-center">
+      <div><img src="images/hai.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Hai</p></div>
+      <div><img src="images/yen.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Yen</p></div>
+      <div><img src="images/guide3.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Guida 3</p></div>
+      <div><img src="images/guide4.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Guida 4</p></div>
+      <div><img src="images/guide5.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Guida 5</p></div>
+      <div><img src="images/guide6.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Guida 6</p></div>
+      <div><img src="images/guide7.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Guida 7</p></div>
+      <div><img src="images/guide8.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Guida 8</p></div>
+      <div><img src="images/guide9.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Guida 9</p></div>
+      <div><img src="images/guide10.jpg" class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full object-cover"><p class="mt-2 font-semibold text-[#6D5044] text-sm md:text-base">Guida 10</p></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 border-t mt-10">
+    <p>PER MAGGIORI INFORMAZIONI, VISITATE IL NOSTRO SITO:</p>
+    <a href="https://www.terra-indochina.com" class="text-[#F7941D] font-bold text-2xl">www.terra-indochina.com</a>
+  </footer>
+
+  <!-- Swiper init -->
+  <script>
+    new Swiper('.hero-slider', {
+      loop: true,
+      navigation: {
+        nextEl: '.hero-slider .swiper-button-next',
+        prevEl: '.hero-slider .swiper-button-prev',
+      },
+      autoplay: { delay: 4000 }
+    });
+
+    new Swiper('.team-slider', {
+      loop: true,
+      navigation: {
+        nextEl: '.team-slider .swiper-button-next',
+        prevEl: '.team-slider .swiper-button-prev',
+      },
+      autoplay: { delay: 5000 }
+    });
+  </script>
+
+</body>
+</html>

@@ -14,7 +14,16 @@
 
   <style>
     body{
+      line-height: 1.5;
+      font-size: 1.25rem;
+
+    }
+    @media (min-width: 576px) {
+      body{
       line-height: 1.44;
+      font-size: 1rem;
+
+    }
     }
     :root {
   --swiper-navigation-color: #fff; /* Changes the arrow color to red */
@@ -39,6 +48,11 @@
     overflow: auto;    
   }
   </style>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
 </head>
 <body class="pt-[100px] font-sans text-gray-700 lg:text-lg">
 
@@ -206,7 +220,7 @@
 
   <!-- CTA -->
   <div class="mx-4 lg:mx-auto md:my-10 mt-10 mb:0 p-5 border-2 border-gray-600 rounded-xl max-w-6xl text-center">
-    <h2 class="inline-block rounded font-bold text-[#F7941D] text-lg md:text-2xl">
+    <h2 class="inline-block rounded font-bold text-[#F7941D] text-2xl md:text-2xl">
       <span class="text-2xl lg:text-2xl">Alla ricerca di</span> <span class="block lg:inline-block text-[#6D5044]">NUOVO PARTNER DI COLLABORAZIONE</span>
     </h2>
   </div>
@@ -214,14 +228,14 @@
   <!-- CHI SIAMO / CHI CERCHIAMO -->
   <section class="gap-12 grid md:grid-cols-2 mx-auto px-4 py-8 max-w-6xl">
     <div>
-      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl">CHI SIAMO</h2>
+      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-2xl md:text-2xl">CHI SIAMO</h2>
       <p class="lg:text-lg"><strong>Terra Indochina</strong> è un <strong>tour operator</strong> specializzato nell’organizzazione di viaggi
 inbound, con oltre 24 anni di esperienza nel settore. Con un team di oltre 50
 dipendenti a tempo pieno e una rete di centinaia di guide parlanti italiano, ogni anno
 organizziamo viaggi per migliaia di <strong>turisti italiani</strong> in Vietnam, Laos e Cambogia.</p>
     </div>
     <div>
-      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl">CHI CERCHIAMO</h2>
+      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-2xl md:text-2xl">CHI CERCHIAMO</h2>
       <p class="lg:text-lg">Se siete <strong>un’agenzia di viaggi italiana</strong>, i vostri clienti desiderano viaggiare in Vietnam, Laos o Cambogia e siete alla ricerca di un <strong>partner locale
 affidabile</strong> per rappresentarvi e organizzare i tour, Terra Indochina è la scelta ideale per voi.</p>
     </div>
@@ -230,19 +244,19 @@ affidabile</strong> per rappresentarvi e organizzare i tour, Terra Indochina è 
   <!-- COSA FACCIAMO -->
   <section class="mx-auto px-4 py-6 max-w-6xl">
     <div class="lg:flex lg:items-start lg:gap-24 p-6 border-2 border-gray-600 rounded-xl">
-      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-2xl md:text-3xl">COSA FACCIAMO</h2>
+      <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-3xl md:text-3xl">COSA FACCIAMO</h2>
       <ul class="space-y-2 lg:text-lg">
         
-        <li class="flex items-start"><svg class="mt-0.5 mr-2 pt-1 text-[.75rem] text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="currentColor" stroke="currentColor" stroke-width="4" d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"/></svg> <span>Specializzati in viaggi <strong>FIT (2 - 8 pax)</strong> con servizi privati e completamente personalizzati.
+        <li class="flex items-start"><svg class="mt-0.5 mr-2 pt-1 shrink-0 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="currentColor" stroke="currentColor" stroke-width="4" d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"/></svg> <span>Specializzati in viaggi <strong>FIT (2 - 8 pax)</strong> con servizi privati e completamente personalizzati.
 </span></li>
-        <li class="flex items-start"><svg class="mt-0.5 mr-2 pt-1 text-[.75rem] text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="currentColor" stroke="currentColor" stroke-width="4" d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"/></svg> <span>Tour <strong>SIC</strong> con partenze settimanali garantite.</span></li>
+        <li class="flex items-start"><svg class="mt-0.5 mr-2 pt-1 shrink-0 text-[.75rem] text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="currentColor" stroke="currentColor" stroke-width="4" d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"/></svg> <span>Tour <strong>SIC</strong> con partenze settimanali garantite.</span></li>
       </ul>
     </div>
   </section>
 
   <!-- PERCHE COLLABORARE -->
   <section class="mx-auto px-4 py-8 max-w-6xl">
-    <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl">PERCHÉ COLLABORARE CON NOI</h2>
+    <h2 class="mb-4 pb-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-2xl md:text-2xl">PERCHÉ COLLABORARE CON NOI</h2>
     <ul class="space-y-2 lg:text-lg">
       <li class="flex items-start"><svg class="mt-0.5 mr-2 pt-1 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M13.637 1.198a1 1 0 0 1 .134 1.408l-8.04 9.73l-.003.002a1.92 1.92 0 0 1-1.5.693a1.92 1.92 0 0 1-1.499-.748l-.001-.002L.21 9.045a1 1 0 1 1 1.578-1.228l2.464 3.167l7.976-9.652a1 1 0 0 1 1.408-.134Z" clip-rule="evenodd"/></svg> <span>Garantiamo un <strong>servizio eccellente</strong> per i vostri clienti, seguiti con cura in ogni fase del viaggio.</span></li>
       <li class="flex items-start"><svg class="mt-0.5 mr-2 pt-1 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M13.637 1.198a1 1 0 0 1 .134 1.408l-8.04 9.73l-.003.002a1.92 1.92 0 0 1-1.5.693a1.92 1.92 0 0 1-1.499-.748l-.001-.002L.21 9.045a1 1 0 1 1 1.578-1.228l2.464 3.167l7.976-9.652a1 1 0 0 1 1.408-.134Z" clip-rule="evenodd"/></svg> <span>Siamo <strong>esperti nel mercato italiano</strong>: poche aziende comprendono i clienti italiani come noi.</span></li>
@@ -253,7 +267,7 @@ perfettamente le esigenze delle agenzie italiane.</span></li>
 
   <!-- CONTATTI -->
   <section class="mx-auto px-4 py-8 max-w-6xl">
-    <h2 class="bg-gray-50 mb-4 p-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl md:text-center">CONTATTACI</h2>
+    <h2 class="bg-gray-50 mb-4 p-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-2xl md:text-2xl md:text-center">CONTATTACI</h2>
     <div class="gap-6 grid md:grid-cols-2">
       <div class="flex flex-wrap item-start">
         <div class="mb-3 w-full">
@@ -261,7 +275,7 @@ perfettamente le esigenze delle agenzie italiane.</span></li>
         </div>
         <img src="images/1.jpg" alt="Riccardo Cellerino" class="mr-4 rounded-full w-24 md:w-32 h-24 md:h-32 object-cover">
         <div class="flex flex-col flex-grow-1 gap-1">
-          <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-base">Sig. Riccardo Cellerino</p>
+          <p class="mt-2 font-bold text-[#6D5044] text-lg md:text-base">Sig. Riccardo Cellerino</p>
            <a class="font-medium text-[#F7941D] text-lg" href="mailto:riccardo.cellerino@gmail.com">riccardo.cellerino@gmail.com</a>
           <a class="text-lg" href="#">+39 338 1738 191</a>
         </div>
@@ -272,7 +286,7 @@ perfettamente le esigenze delle agenzie italiane.</span></li>
        </div>
         <img src="images/2.jpg" alt="Ngoc Mai" class="mr-4 rounded-full w-24 md:w-32 h-24 md:h-32 object-cover">
         <div class="flex flex-col flex-grow-1 gap-1">
-          <p class="mt-2 font-bold text-[#6D5044] text-sm md:text-base">Sig.ra Ngoc Mai</p>
+          <p class="mt-2 font-bold text-[#6D5044] text-lg md:text-base">Sig.ra Ngoc Mai</p>
           <a class="font-medium text-[#F7941D] text-lg" href="mailto:ngoc.mai@terra-indochina.com">ngoc.mai@terra-indochina.com</a>
           <a class="text-lg" href="#">+84 987 888 171</a>
         </div>
@@ -290,8 +304,8 @@ pre/post-fiera che direttamente in fiera, vi invitiamo a contattare la Sig.ra Ng
 
   <!-- TEAM SLIDER -->
   <section class="mx-auto px-4 py-8 max-w-6xl">
-    <h2 class="bg-gray-50 mb-4 p-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-lg md:text-2xl md:text-center">LA NOSTRA SQUADRA</h2>
-    <p class="mb-8 text-gray-700 text-base md:text-xl text-center">Siamo un DMC B2B con sede in Vietnam da 24 anni</p>
+    <h2 class="bg-gray-50 mb-4 p-2 border-[#F7941D]/40 border-b-1 font-bold text-[#F7941D] text-2xl md:text-2xl md:text-center">LA NOSTRA SQUADRA</h2>
+    <p class="mb-8 text-gray-700 text-xl md:text-xl text-center">Siamo un DMC B2B con sede in Vietnam da 24 anni</p>
     <div class="relative mx-auto swiper team-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -315,15 +329,15 @@ pre/post-fiera che direttamente in fiera, vi invitiamo a contattare la Sig.ra Ng
     <!-- 2 lãnh đạo -->
     <div class="gap-6 grid grid-cols-2 mb-10 text-center">
       <div>
-        <p class="font-bold text-xs md:text-lg">Presidente del gruppo</p>
+        <p class="font-bold text-base md:text-lg">Presidente del gruppo</p>
         <img src="images/3.jpg" class="mx-auto my-2 rounded-lg w-24 md:w-48 h-24 md:h-48 object-cover">
-        <p class="mt-2 font-bold text-[#6D5044] md:text-md text-sm">Nguyen Manh Hoa</p>
+        <p class="mt-2 font-bold text-[#6D5044] md:text-md text-base">Nguyen Manh Hoa</p>
         
       </div>
       <div>
-         <p class="font-bold text-xs md:text-lg">Amministratrice delegata</p>
+         <p class="font-bold text-base md:text-lg">Amministratrice delegata</p>
         <img src="images/4.jpg" class="mx-auto my-2 rounded-lg w-24 md:w-48 h-24 md:h-48 object-cover">
-        <p class="mt-2 font-bold text-[#6D5044] md:text-md text-sm">Nguyen Thi Mai</p>
+        <p class="mt-2 font-bold text-[#6D5044] md:text-md text-base">Nguyen Thi Mai</p>
        
       </div>
     </div>
@@ -331,29 +345,29 @@ pre/post-fiera che direttamente in fiera, vi invitiamo a contattare la Sig.ra Ng
     <!-- 2 management -->    
     <div class="gap-6 grid grid-cols-2 mb-10 text-center">
       <div>
-        <p class="font-bold text-xs md:text-lg">Rappresentante in Italia</p>
+       <p class="font-bold text-base md:text-lg">Rappresentante in Italia</p>
         <img src="images/1.jpg" class="mx-auto my-2 rounded-lg w-24 md:w-40 h-24 md:h-40 object-cover">
-        <p class="mt-2 font-bold text-[#6D5044] md:text-md text-sm">Riccardo Cellerino</p>
+         <p class="mt-2 font-bold text-[#6D5044] md:text-md text-base">Riccardo Cellerino</p>
       </div>
       <div>
-        <p class="font-bold text-xs md:text-lg">Responsabile vendite</p>
+       <p class="font-bold text-base md:text-lg">Responsabile vendite</p>
         <img src="images/2.jpg" class="mx-auto my-2 rounded-lg w-24 md:w-40 h-24 md:h-40 object-cover">
-        <p class="font-bold text-[#6D5044] md:text-md text-sm">Hoang Ngoc Mai</p>
+         <p class="mt-2 font-bold text-[#6D5044] md:text-md text-base">Hoang Ngoc Mai</p>
        
       </div>
     </div>
 
     <!-- 4 Sale -->
-    <h3 class="mb-6 font-bold text-lg md:text-xl text-center">Il nostro team di consulenti di viaggio</h3>
+    <h3 class="mb-6 font-bold text-xl md:text-xl text-center">Il nostro team di consulenti di viaggio</h3>
     <div class="gap-6 grid grid-cols-4 mb-10 text-center">
-      <div><img src="images/s1.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-sm">Trang</p></div>
-      <div><img src="images/s2.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-sm">Tra</p></div>
-      <div><img src="images/s3.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-sm">Ngan</p></div>
-      <div><img src="images/s4.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-sm">Yen</p></div>
+      <div><img src="images/s1.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-base">Trang</p></div>
+      <div><img src="images/s2.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-base">Tra</p></div>
+      <div><img src="images/s3.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-base">Ngan</p></div>
+      <div><img src="images/s4.jpg" class="mx-auto rounded-full w-20 md:w-32 h-20 md:h-32 object-cover"><p class="mt-2 font-semibold text-[#6D5044] md:text-md text-base">Yen</p></div>
     </div>
 
     <!-- 10 Guide -->
-    <h3 class="mb-6 font-bold text-lg md:text-xl text-center">Le nostre guide parlanti italiano</h3>
+    <h3 class="mb-6 font-bold text-xl md:text-xl text-center">Le nostre guide parlanti italiano</h3>
     <div class="gap-4 grid grid-cols-5 mx-auto max-w-2xl text-center">
       <div><img src="images/g1.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
       <div><img src="images/g2.jpg" class="mx-auto rounded-full w-16 md:w-24 h-16 md:h-24 object-cover"></div>
